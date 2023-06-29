@@ -35,7 +35,7 @@ echo -e "\n\n"
 
 
 echo Upgrading apps
-sudo apt dist-upgrade
+sudo apt dist-upgrade -y
 echo -e "\n\n"
 
 
