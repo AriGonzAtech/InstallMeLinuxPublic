@@ -26,6 +26,7 @@ done
 
 echo Pointing the time server to ntp.ubuntu.com
 sudo ntpdate ntp.ubuntu.com
+sudo timedatectl set-timezone America/Chicago
 echo -e "\n\n"
 
 
