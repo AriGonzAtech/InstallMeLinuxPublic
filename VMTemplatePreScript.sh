@@ -1,5 +1,4 @@
 #! /bin/bash
-
 sudo echo
 
 echo Updating the apt repository
@@ -7,12 +6,10 @@ sudo apt update -y
 echo -e "\n\n"
 
 
-
-
 aptgetArray=(	qemu-guest-agent
-				cloud-init
-				ntp
-				ntpdate	)
+		cloud-init
+		ntp
+		ntpdate	)
 
 
 for i in "${aptgetArray[@]}"
@@ -32,7 +29,7 @@ echo -e "\n\n"
 
 
 echo Enabling the firewall and allowing ssh
-sudo ufw enable
+sudo ufw enable -y
 sudo ufw allow ssh
 echo -e "\n\n"
 
@@ -61,7 +58,7 @@ echo -e "\n\n"
 
 echo Clean the apt repository and clean orphaned apt installations 
 sudo apt clean
-sudo apt autoremove
+sudo apt autoremove -y
 echo -e "\n\n"
 
 
