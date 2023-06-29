@@ -9,7 +9,8 @@ echo -e "\n\n"
 aptgetArray=(	qemu-guest-agent
 		cloud-init
 		ntp
-		ntpdate	)
+		ntpdate
+  		ufw	)
 
 
 for i in "${aptgetArray[@]}"
