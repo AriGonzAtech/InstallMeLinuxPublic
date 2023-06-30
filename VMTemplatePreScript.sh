@@ -57,6 +57,12 @@ sudo truncate -s 0 /etc/machine-id
 cat /etc/machine-id
 echo -e "\n\n"
 
+echo Clearing out the BASH history
+cat /etc/machine-id
+sudo truncate -s 0 ~/.bash_history
+cat ~/.bash_history
+echo -e "\n\n"
+
 
 echo Clean the apt repository and clean orphaned apt installations 
 sudo apt clean
