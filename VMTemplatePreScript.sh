@@ -10,7 +10,8 @@ aptgetArray=(	qemu-guest-agent
 		cloud-init
 		ntp
 		ntpdate
-  		ufw	)
+  		ufw
+    		nano	)
 
 
 for i in "${aptgetArray[@]}"
@@ -57,12 +58,6 @@ sudo truncate -s 0 /etc/machine-id
 cat /etc/machine-id
 echo -e "\n\n"
 
-echo Clearing out the BASH history
-cat /etc/machine-id
-sudo truncate -s 0 ~/.bash_history
-cat ~/.bash_history
-echo -e "\n\n"
-
 
 echo Clean the apt repository and clean orphaned apt installations 
 sudo apt clean
@@ -80,6 +75,14 @@ fi
 echo -e "\n\n"
 
 
+echo Clearing out the BASH history
+sudo truncate -s 0 ~/.bash_history
+cat ~/.bash_history
+echo -e "\n\n"
+
+
 echo Shutdown the VM and you can now create the template
-sudo shutdown
+sudo shutdown 
+
+
 
