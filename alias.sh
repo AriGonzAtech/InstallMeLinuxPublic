@@ -4,7 +4,7 @@ clear
 
 declare -A aliasList=( 
 	[getauthorized_keys]='"rm -f ~/authorized_keys.sh && wget https://raw.githubusercontent.com/AriGonzAtech/InstallMeLinuxPublic/installme/authorized_keys.sh && bash ~/authorized_keys.sh"'
-	
+	[getAliasScript]='"rm -f ~/alias.sh && wget https://raw.githubusercontent.com/AriGonzAtech/InstallMeLinuxPublic/installme/alias.sh && bash ~/alias.sh"'
  )
 
 
