@@ -6,8 +6,7 @@ sshKeyArray=(
             )
 
 
-for i in "${sshKeyArray[@]}"
-do
+for i in "${sshKeyArray[@]}"; do
   if ! grep -q "$i" ~/.ssh/authorized_keys; then
       echo $i >> ~/.ssh/authorized_keys && echo Adding public key to ~/.ssh/authorized_keys:  $i
   else
