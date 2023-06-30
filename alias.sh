@@ -11,7 +11,7 @@ declare -A aliasList=(
 for key in "${!aliasList[@]}"; do 
   if ! grep -q "$key" ~/.bashrc; then
       echo Adding alias 
-	    echo "alias $key=${aliasList[$key]}" >> ~/.bashrc
+      echo "alias $key=${aliasList[$key]}" >> ~/.bashrc
   else
       echo alias $key is already there
   fi
