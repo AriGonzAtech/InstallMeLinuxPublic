@@ -76,6 +76,7 @@ echo -e "\n\n"
 
 
 echo Clearing out the BASH history
+history -c && history -w
 sudo truncate -s 0 ~/.bash_history
 cat ~/.bash_history
 echo -e "\n\n"
