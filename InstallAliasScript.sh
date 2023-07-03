@@ -18,9 +18,11 @@ for key in "${!aliasList[@]}"; do
       echo Adding alias 
       echo "alias $key=${aliasList[$key]}" >> ~/.bashrc
       echo "alias $key=${aliasList[$key]}"
+      echo -e '\n'
   else
       echo alias $key is already there
       cat ~/.bashrc | grep $key
+      echo -e '\n'
   fi
 done
 
