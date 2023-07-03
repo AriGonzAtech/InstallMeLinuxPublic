@@ -3,8 +3,10 @@ sudo echo
 clear
 
 declare -A aliasList=( 
-	[getauthorized_keys]='"rm -f ~/authorized_keys.sh && wget https://raw.githubusercontent.com/AriGonzAtech/InstallMeLinuxPublic/installme/authorized_keys.sh && sudo bash ~/authorized_keys.sh"'
+	[getAuthorized_keysScript]='"rm -f ~/authorized_keys.sh && wget https://raw.githubusercontent.com/AriGonzAtech/InstallMeLinuxPublic/installme/authorized_keys.sh && sudo bash ~/authorized_keys.sh"'
 	[getAliasScript]='"rm -f ~/InstallAliasScript.sh && wget https://raw.githubusercontent.com/AriGonzAtech/InstallMeLinuxPublic/installme/InstallAliasScript.sh && sudo bash ~/InstallAliasScript.sh"'
+ 	[getAliasScript]='"rm -f ~/InstallAliasScript.sh && wget https://raw.githubusercontent.com/AriGonzAtech/InstallMeLinuxPublic/installme/InstallAliasScript.sh && sudo bash ~/InstallAliasScript.sh"'
+  	[getAliasScript]='"rm -f ~/InstallAliasScript.sh && wget https://raw.githubusercontent.com/AriGonzAtech/InstallMeLinuxPublic/installme/InstallAliasScript.sh && sudo bash ~/InstallAliasScript.sh"'
  )
 
 
