@@ -22,3 +22,5 @@ for key in "${!aliasList[@]}"; do
   fi
 done
 
+#This will refresh the bash terminal with the latest entries
+. ~/.bashrc
