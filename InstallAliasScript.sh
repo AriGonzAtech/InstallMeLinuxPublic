@@ -20,6 +20,7 @@ for key in "${!aliasList[@]}"; do
       echo "alias $key=${aliasList[$key]}"
   else
       echo alias $key is already there
+      cat ~/.bashrc | grep $key
   fi
 done
 
