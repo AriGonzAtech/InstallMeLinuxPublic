@@ -6,10 +6,10 @@ gitRepo=https://raw.githubusercontent.com/AriGonzAtech/InstallMeLinuxPublic/inst
 
 
 declare -A aliasList=( 
-	[getAuthorized_keysScript]='"rm -f ~/authorized_keys.sh && wget https://raw.githubusercontent.com/AriGonzAtech/InstallMeLinuxPublic/installme/authorized_keys.sh && sudo bash ~/authorized_keys.sh"'
-	[getAliasScript]='"rm -f ~/InstallAliasScript.sh && wget https://raw.githubusercontent.com/AriGonzAtech/InstallMeLinuxPublic/installme/InstallAliasScript.sh && sudo bash ~/InstallAliasScript.sh"'
- 	[getInstallCTTemplatePostScript]='"rm -f ~/InstallCTTemplatePostScript.sh && wget https://raw.githubusercontent.com/AriGonzAtech/InstallMeLinuxPublic/installme/InstallCTTemplatePostScript.sh && sudo bash ~/InstallCTTemplatePostScript.sh"'
-  	[getInstallVMTemplatePreScript]='"rm -f ~/InstallVMTemplatePreScript.sh && wget https://raw.githubusercontent.com/AriGonzAtech/InstallMeLinuxPublic/installme/InstallVMTemplatePreScript.sh && sudo bash ~/InstallVMTemplatePreScript.sh"'
+	[InstallAuthorizedKeys]='"rm -f ~/InstallAuthorizedKeys.sh && wget https://raw.githubusercontent.com/AriGonzAtech/InstallMeLinuxPublic/installme/InstallAuthorizedKeys.sh -P ~/ && sudo bash ~/InstallAuthorizedKeys.sh"'
+	[InstallAliasScript]='"rm -f ~/InstallAliasScript.sh && wget https://raw.githubusercontent.com/AriGonzAtech/InstallMeLinuxPublic/installme/InstallAliasScript.sh -P ~/ && sudo bash ~/InstallAliasScript.sh"'
+ 	[InstallCTTemplatePostScript]='"rm -f ~/InstallCTTemplatePostScript.sh && wget https://raw.githubusercontent.com/AriGonzAtech/InstallMeLinuxPublic/installme/InstallCTTemplatePostScript.sh -P ~/ && sudo bash ~/InstallCTTemplatePostScript.sh"'
+  	[InstallVMTemplatePreScript]='"rm -f ~/InstallVMTemplatePreScript.sh && wget https://raw.githubusercontent.com/AriGonzAtech/InstallMeLinuxPublic/installme/InstallVMTemplatePreScript.sh -P ~/ && sudo bash ~/InstallVMTemplatePreScript.sh"'
  )
 
 
