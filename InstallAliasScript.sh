@@ -6,10 +6,10 @@ gitRepo=https://raw.githubusercontent.com/AriGonzAtech/InstallMeLinuxPublic/inst
 
 
 declare -A aliasList=( 
-	[InstallAuthorizedKeys]='"rm -f $HOME/InstallAuthorizedKeys.sh && wget https://raw.githubusercontent.com/AriGonzAtech/InstallMeLinuxPublic/installme/InstallAuthorizedKeys.sh -P $HOME && sudo bash $HOME/InstallAuthorizedKeys.sh"'
-	[InstallAliasScript]='"rm -f $HOME/InstallAliasScript.sh && wget https://raw.githubusercontent.com/AriGonzAtech/InstallMeLinuxPublic/installme/InstallAliasScript.sh -P $HOME && sudo bash $HOME/InstallAliasScript.sh"'
- 	[InstallCTTemplatePostScript]='"rm -f $HOME/InstallCTTemplatePostScript.sh && wget https://raw.githubusercontent.com/AriGonzAtech/InstallMeLinuxPublic/installme/InstallCTTemplatePostScript.sh -P $HOME && sudo bash $HOME/InstallCTTemplatePostScript.sh"'
-  	[InstallVMTemplatePreScript]='"rm -f $HOME/InstallVMTemplatePreScript.sh && wget https://raw.githubusercontent.com/AriGonzAtech/InstallMeLinuxPublic/installme/InstallVMTemplatePreScript.sh -P $HOME && sudo bash $HOME/InstallVMTemplatePreScript.sh"'
+	[InstallAuthorizedKeys.sh]='"rm -f $HOME/$key && wget $gitRepo/$key -P $HOME && sudo bash $HOME/$key"'
+	[InstallAliasScript.sh]='"rm -f $HOME/$key && wget $gitRepo/$key -P $HOME && sudo bash $HOME/$key"'
+ 	[InstallCTTemplatePostScript.sh]='"rm -f $HOME/$key && wget $gitRepo/$key -P $HOME && sudo bash $HOME/$key"'
+  	[InstallVMTemplatePreScript.sh]='"rm -f $HOME/$key && wget $gitRepo/$key -P $HOME && sudo bash $HOME/$key"'
  )
 
 
