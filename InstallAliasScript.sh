@@ -10,6 +10,7 @@ declare -A aliasList=(
 	[InstallAliasScript.sh]='"rm -f $HOME/$key && wget $gitRepo/$key -P $HOME && sudo bash $HOME/$key"'
  	[InstallCTTemplatePostScript.sh]='"rm -f $HOME/$key && wget $gitRepo/$key -P $HOME && sudo bash $HOME/$key"'
   	[InstallVMTemplatePreScript.sh]='"rm -f $HOME/$key && wget $gitRepo/$key -P $HOME && sudo bash $HOME/$key"'
+	[ipa]=ip a | egrep '(^[1-9]|\sinet)'
  )
 
 
